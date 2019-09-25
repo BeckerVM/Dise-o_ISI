@@ -1,0 +1,250 @@
+.home {
+
+  &__video {
+    background-color: #f1f1f1;
+
+    width: 100%;
+    height: 90vh;
+  }
+
+  &__mvp, &__events, &__labs {
+    padding: 6rem 14rem;
+    border-bottom: .1rem solid $color-gray;
+  }
+
+  &__mvp, &__labs-content {
+    display: flex;
+  }
+
+  &__mvp-col, &__labs-col {
+    flex: 1;
+
+    text-align: center;
+  }
+
+  &__mvp-container-options {
+  }
+
+  &__mvp-options {
+    border: .1rem solid $color-secondary;
+    display: flex;
+
+    width: 40rem;
+
+    margin: 0 auto;
+    margin-bottom: 4rem;
+
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 700;
+
+      flex: 1;
+
+      padding: 1rem 0;
+
+      color: $color-terciary;
+
+      transition: all .3s;
+      position: relative;
+      cursor: pointer;
+    }
+
+    span::after {
+      content: "";
+      width: 1.5rem;
+      height: 1rem;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+      background-color: transparent;
+
+      position: absolute;
+      top: 100%;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    span.active {
+      background-color: $color-secondary;
+      color: $color-white;
+    }
+
+    span.active::after {
+      background-color: $color-secondary;
+    }
+
+    span:nth-child(1) {
+      border-right: .1rem solid $color-secondary;
+    }
+
+    span:nth-child(2) {
+      border-right: .1rem solid $color-secondary;
+    }
+  }
+
+  &__mvp-text {
+    padding: 0 8rem;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+
+  &__mvp-container-logo {
+    padding: 0 8rem;
+  }
+
+  &__mvp-logo {
+    border: .3rem solid $color-gray;
+    border-radius: .5rem;
+    position: relative;
+  }
+
+  &__mvp-isi {
+    background-color: $color-primary;
+    color: $color-white;
+
+    position: absolute;
+    top: 50%;
+    left: -2.2rem;
+
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+    transform: translateY(-50%);
+  }
+
+
+  &__slider {
+    display: flex;
+  }
+
+  &__slider-item {
+    padding: 0 1.5rem;
+    border-right: .2rem solid $color-secondary;
+    display: flex;
+  }
+
+  &__slider-item:nth-child(3) {
+    border-right: none;
+  }
+
+  &__slider-calendar {
+    border: .1rem solid $color-primary;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 1rem;
+
+    > span {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      span {
+        margin-bottom: .5rem;
+        font-size: 1.3rem;
+      }
+
+      span:nth-child(1) {
+        color: $color-primary;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__slider-text {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+
+    h4 {
+      font-size: 1.2rem;
+      color: $color-terciary;
+      margin-bottom: .5rem;
+    }
+    
+    span {
+      margin-bottom: .5rem;
+      display: block;
+    }
+  }
+
+  &__slider-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: $color-primary;
+  }
+
+  &__labs-col:nth-child(1) {
+    display: flex;
+  }
+
+  &__labs-types {
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid $color-primary;
+    margin-right: 2rem;
+  }
+
+  &__labs-type {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  &__labs-type:nth-child(1), &__labs-type:nth-child(2) {
+    border-bottom: .1rem solid $color-primary;
+  }
+
+  &__labs-type.active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__labs-lab {
+    text-align: start;
+    flex: 1;
+    align-self: center;
+
+    h4, h5 {
+      color: $color-primary;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__labs-link {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+}

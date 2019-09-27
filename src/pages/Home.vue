@@ -134,6 +134,22 @@
         <div class="home__labs-col">Holis</div>
       </div>
     </div>
+    <div class="home__news">
+      <h3 class="title">Noticias</h3>
+      <div class="home__news-content">
+        <div class="home__news-col">
+          <div class="home__news-title">
+            <span>Noticia del dia</span>
+            <span>29/08/2019</span>
+          </div>
+          <img src="../assets/images/image3.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nihil tenetur delectus ipsam magni enim ut minima totam, magnam porro.</p>
+        </div>
+        <div class="home__news-col">
+          holis
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
